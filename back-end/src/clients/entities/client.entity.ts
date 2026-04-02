@@ -29,10 +29,10 @@ export class Client {
   companyValue!: number;
 
   @Index({ unique: true, where: '"email" IS NOT NULL' })
-  @Column({ nullable: true })
+  @Column('varchar', { nullable: true })
   email!: string | null;
 
-  @Column({ nullable: true })
+  @Column('varchar', { nullable: true })
   phone!: string | null;
 
   @Column({ default: 0 })
@@ -47,4 +47,3 @@ export class Client {
   @DeleteDateColumn()
   deletedAt!: Date | null;
 }
-
