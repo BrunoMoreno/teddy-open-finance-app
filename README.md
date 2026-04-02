@@ -18,7 +18,7 @@ MVP full-stack de gestão de clientes entregue como monorepo Nx, com um front-en
 
 ## Como rodar o stack completo
 
-1. Revise [`/home/bruno/Tests/teddy-open-finance/back-end/.env.example`](/home/bruno/Tests/teddy-open-finance/back-end/.env.example) e [`/home/bruno/Tests/teddy-open-finance/front-end/.env.example`](/home/bruno/Tests/teddy-open-finance/front-end/.env.example).
+1. Revise [`teddy-open-finance/back-end/.env.example`](teddy-open-finance/back-end/.env.example) e [`teddy-open-finance/front-end/.env.example`](teddy-open-finance/front-end/.env.example).
 2. Na raiz, execute `docker compose up --build`.
 3. Acesse:
    - Front-end: `http://localhost:5173`
