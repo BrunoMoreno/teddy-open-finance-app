@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: front-end/Dockerfile
+    env_file:
+      - .env.example
+    ports:
+      - "5173:5173"
+
