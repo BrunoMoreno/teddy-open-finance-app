@@ -1,0 +1,37 @@
+{
+  "name": "back-end",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "back-end/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run build",
+        "cwd": "back-end"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run start:dev",
+        "cwd": "back-end"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run lint",
+        "cwd": "back-end"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run test",
+        "cwd": "back-end"
+      }
+    }
+  }
+}
+
