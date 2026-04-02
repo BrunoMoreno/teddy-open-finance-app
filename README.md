@@ -84,8 +84,8 @@ Essas práticas importam porque tornam o comportamento do sistema legível em pr
 
 ## CI/CD
 
-- [`/home/bruno/Tests/teddy-open-finance/.github/workflows/frontend.yml`](/home/bruno/Tests/teddy-open-finance/.github/workflows/frontend.yml): lint, testes e build do front-end.
-- [`/home/bruno/Tests/teddy-open-finance/.github/workflows/backend.yml`](/home/bruno/Tests/teddy-open-finance/.github/workflows/backend.yml): lint, testes e build do back-end.
+- [`.github/teddy-open-finance/.github/workflows/frontend.yml`](.github/teddy-open-finance/.github/workflows/frontend.yml): lint, testes e build do front-end.
+- [`.github/teddy-open-finance/.github/workflows/backend.yml`](.github/teddy-open-finance/.github/workflows/backend.yml): lint, testes e build do back-end.
 
 ## Observações
 
