@@ -18,4 +18,4 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/back-end/package.json ./back-end/package.json
 COPY --from=builder /app/back-end/dist ./back-end/dist
 EXPOSE 3000
-CMD ["node", "back-end/dist/main.js"]
+CMD ["node", "back-end/dist/src/main.js"]
