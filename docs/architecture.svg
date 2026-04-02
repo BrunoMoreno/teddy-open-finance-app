@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" fill="#F5F5F5"/>
+  <rect x="40" y="120" width="180" height="100" rx="16" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="130" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1A1A2E">Browser</text>
+  <text x="130" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#555">React + Vite</text>
+  <rect x="370" y="70" width="180" height="100" rx="16" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="460" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1A1A2E">Front-End</text>
+  <text x="460" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#555">Nx app / port 5173</text>
+  <rect x="370" y="200" width="180" height="100" rx="16" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="460" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1A1A2E">Back-End</text>
+  <text x="460" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#555">NestJS / JWT / Metrics</text>
+  <rect x="700" y="70" width="180" height="100" rx="16" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="790" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1A1A2E">PostgreSQL</text>
+  <text x="790" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#555">Clients + Users</text>
+  <rect x="700" y="200" width="180" height="100" rx="16" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="790" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1A1A2E">Observability</text>
+  <text x="790" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#555">/healthz + /metrics + logs</text>
+  <path d="M220 170H350" stroke="#FF6B00" stroke-width="4" stroke-linecap="round"/>
+  <path d="M550 120H680" stroke="#FF6B00" stroke-width="4" stroke-linecap="round"/>
+  <path d="M550 250H680" stroke="#FF6B00" stroke-width="4" stroke-linecap="round"/>
+  <path d="M460 170V190" stroke="#1A1A2E" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="350,170 334,162 334,178" fill="#FF6B00"/>
+  <polygon points="680,120 664,112 664,128" fill="#FF6B00"/>
+  <polygon points="680,250 664,242 664,258" fill="#FF6B00"/>
+  <polygon points="460,190 452,174 468,174" fill="#1A1A2E"/>
+</svg>
+

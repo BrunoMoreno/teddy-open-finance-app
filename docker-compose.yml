@@ -1,0 +1,55 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: teddy-db
+    environment:
+      POSTGRES_DB: teddy_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d teddy_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  back-end:
+    build:
+      context: .
+      dockerfile: back-end/Dockerfile
+    container_name: teddy-back-end
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - ./back-end/.env.example
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASS: postgres
+      DB_NAME: teddy_db
+      CORS_ORIGIN: http://localhost:5173
+    ports:
+      - "3000:3000"
+
+  front-end:
+    build:
+      context: .
+      dockerfile: front-end/Dockerfile
+    container_name: teddy-front-end
+    depends_on:
+      - back-end
+    env_file:
+      - ./front-end/.env.example
+    environment:
+      VITE_API_BASE_URL: http://localhost:3000
+    ports:
+      - "5173:5173"
+
+volumes:
+  postgres-data:
+
